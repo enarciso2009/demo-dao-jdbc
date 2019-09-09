@@ -129,11 +129,8 @@ public class SellerDaoJDBC implements SellerDao {
 			throw new DbException(e.getMessage());
 			
 		}
-		finally {
-		DB.closeStatement(st);
-		
 		}
-	}
+
 	@Override
 	public Seller findById(Integer id) {
 		PreparedStatement st = null;
